@@ -1,0 +1,45 @@
+{
+    "cli": true,
+    "target": "directory",
+    "adapterName": "philipstv-iob",
+    "title": "Philips TV Connector",
+    "description": "Manage and Integrate your Philips TV 2015+ in Iobroker",
+    "keywords": [
+        "philipstv",
+        "tv",
+        "jointspace",
+        "api"
+    ],
+    "expert": "yes",
+    "features": [
+        "adapter"
+    ],
+    "adminFeatures": [],
+    "type": "multimedia",
+    "startMode": "daemon",
+    "connectionType": "local",
+    "dataSource": "poll",
+    "connectionIndicator": "yes",
+    "language": "JavaScript",
+    "adminReact": "no",
+    "tools": [
+        "ESLint",
+        "type checking"
+    ],
+    "i18n": "words.js",
+    "releaseScript": "yes",
+    "devServer": "yes",
+    "devServerPort": 8081,
+    "indentation": "Space (4)",
+    "quotes": "single",
+    "es6class": "yes",
+    "authorName": "Paolo Pietroluongo",
+    "authorGithub": "paolo74",
+    "authorEmail": "paolo@pietroluongo.de",
+    "gitRemoteProtocol": "SSH",
+    "gitCommit": "yes",
+    "defaultBranch": "master",
+    "license": "MIT License",
+    "dependabot": "yes",
+    "creatorVersion": "2.1.1"
+}

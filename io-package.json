@@ -1,0 +1,101 @@
+{
+    "common": {
+        "name": "philipstv-iob",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "Philips TV Connector",
+        "titleLang": {
+            "en": "Philips TV Connector",
+            "de": "Philips TV-Anschluss",
+            "ru": "Разъем Philips для телевизора",
+            "pt": "Conector de TV Philips",
+            "nl": "Philips TV-connector",
+            "fr": "Connecteur TV Philips",
+            "it": "Connettore TV Philips",
+            "es": "Conector de TV Philips",
+            "pl": "Złącze telewizyjne Philips",
+            "zh-cn": "飞利浦电视连接器"
+        },
+        "desc": {
+            "en": "Manage and Integrate your Philips TV 2015+ in Iobroker",
+            "de": "Verwalten und integrieren Sie Ihren Philips Fernseher 2015+ in Iobroker",
+            "ru": "Управляйте и интегрируйте свой телевизор Philips 2015+ в Iobroker",
+            "pt": "Gerencie e integre sua TV Philips 2015+ no Iobroker",
+            "nl": "Beheer en integreer uw Philips TV 2015+ in Iobroker",
+            "fr": "Gérez et intégrez votre Philips TV 2015+ dans Iobroker",
+            "it": "Gestisci e integra la tua TV Philips 2015+ in Iobroker",
+            "es": "Administre e integre su televisor Philips 2015+ en Iobroker",
+            "pl": "Zarządzaj i integruj swój telewizor Philips 2015+ w Iobroker",
+            "zh-cn": "在 Iobroker 中管理和集成您的飞利浦 TV 2015+"
+        },
+        "authors": [
+            "Paolo Pietroluongo <paolo@pietroluongo.de>"
+        ],
+        "keywords": [
+            "philipstv",
+            "tv",
+            "jointspace",
+            "api"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "philipstv-iob.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/paolo74/ioBroker.philipstv-iob/master/admin/philipstv-iob.png",
+        "readme": "https://github.com/paolo74/ioBroker.philipstv-iob/blob/master/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "multimedia",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "materialize": true,
+        "dependencies": [
+            {
+                "js-controller": ">=2.0.0"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
